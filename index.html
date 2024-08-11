@@ -880,33 +880,7 @@
     }
 
   </style>
-<script>
-novoContainer = document.querySelector('.novoContainer')
-fechar = document.querySelectorAll('.fechar-btn')  
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(function () {
-        novoContainer.style.display = 'flex'
-    }, 0); // Delay de 5 segundos
-});
-fechar.forEach((btn) =>
-{
-  btn.addEventListener('click', function(event)
-{
-  event.stopPropagation()
-  novoContainer.style.display = 'none'
-})
-})
 
-novoContainer.addEventListener('click', function(event)
-{
-  event.stopPropatagion()
-  if(event.target === this)
-  {
-    this.style.display = 'none'
-  }
-})
-
-</script>
           <div class="mt-5 d-flex justify-content-center align-items">
             <span class="p-4 d-flex flex-column align-items-center justify-content-center" style="    background: linear-gradient(to right, #0a171e, rgb(7 34 50)); border-radius:12px;">
               <span class="visto-em" style="color:#bcb6b6 !important; font-size:2rem; font-family: 'Montserrat', sans-serif;">COMO VISTO EM:
